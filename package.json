@@ -2,9 +2,9 @@
   "name": "lottie-to-svg",
   "description": "Convert a lottie animation to an SVG file",
   "author": "Chad Lee",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "scripts": {
     "lint": "eslint src"
   },
