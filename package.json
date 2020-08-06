@@ -1,0 +1,36 @@
+{
+  "name": "lottie-to-svg",
+  "description": "Convert a lottie animation to an SVG file",
+  "author": "Chad Lee",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint src"
+  },
+  "keywords": [
+    "lottie",
+    "animation",
+    "placeholder",
+    "svg"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chadly/lottie-to-svg.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chadly/lottie-to-svg/issues"
+  },
+  "homepage": "https://github.com/chadly/lottie-to-svg#README",
+  "dependencies": {
+    "canvas": "^2.6.1",
+    "jsdom": "^16.3.0",
+    "lottie-web": "^5.7.1"
+  },
+  "devDependencies": {
+    "@runly/eslint-config": "^2.0.1",
+    "eslint": "^7.6.0",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2"
+  }
+}

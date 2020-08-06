@@ -1,0 +1,6 @@
+# Auto detect text files and perform LF normalization
+*				text=auto
+
+# NPM creates package.json with LF endings independently of platform. Allowing git to create the file
+# with CRLF only makes it show an annoying, un-stageable, EOL-only diff.
+package.json	text					eol=lf
