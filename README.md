@@ -1,6 +1,6 @@
 # Lottie to SVG Converter
 
-> Convert the first frame of a [Lottie animation](https://github.com/airbnb/lottie-web) into an SVG.
+> Convert the first frame of a [Lottie animation](https://github.com/airbnb/lottie-web) into an SVG. You may also be interested in the [Gatsby Remark plugin](https://github.com/chadly/gatsby-remark-lottie) that uses this project.
 
 Convert this animation to a standard SVG:
 
