@@ -1,6 +1,6 @@
 const { JSDOM } = require("jsdom");
 
-module.exports = async (animationData, opts) => {
+module.exports = async (animationData, opts, frameNumber) => {
 	const { window } = new JSDOM("<!DOCTYPE html><body></body>", {
 		pretendToBeVisual: true
 	});
@@ -15,6 +15,6 @@ module.exports = async (animationData, opts) => {
 	// load the lottie renderer late after globals are set
 	const renderToDom = require("./render");
 
-	const result = await renderToDom(document, animationData, opts || {});
+	const result = await renderToDom(document, animationData, opts || {}, frameNumber || 0);
 	return result;
 };

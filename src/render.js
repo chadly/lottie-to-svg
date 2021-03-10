@@ -1,6 +1,6 @@
 const lottie = require("lottie-web");
 
-module.exports = (document, animationData, opts) =>
+module.exports = (document, animationData, opts, frameNumber) =>
 	new Promise((resolve, reject) => {
 		try {
 			const container = document.createElement("div");
@@ -16,6 +16,7 @@ module.exports = (document, animationData, opts) =>
 			});
 
 			instance.addEventListener("DOMLoaded", () => {
+				instance.goToAndStop(frameNumber, true)
 				resolve(container.innerHTML);
 			});
 		} catch (err) {
