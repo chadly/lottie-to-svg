@@ -15,6 +15,11 @@ module.exports = async (animationData, opts, frameNumber) => {
 	// load the lottie renderer late after globals are set
 	const renderToDom = require("./render");
 
-	const result = await renderToDom(document, animationData, opts || {}, frameNumber || 0);
+	const result = await renderToDom(
+		document,
+		animationData,
+		opts || {},
+		frameNumber || 0
+	);
 	return result;
 };

@@ -16,7 +16,7 @@ module.exports = (document, animationData, opts, frameNumber) =>
 			});
 
 			instance.addEventListener("DOMLoaded", () => {
-				instance.goToAndStop(frameNumber, true)
+				instance.goToAndStop(frameNumber, true);
 				resolve(container.innerHTML);
 			});
 		} catch (err) {
